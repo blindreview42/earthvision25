@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsarcamp"
+version = "0.1.0"
+dependencies = [
+  "numpy",
+  "scipy",
+  "shapely",
+  "matplotlib",
+  "pandas",
+  "geopandas",
+  "rasterio",
+  "pyproj",
+]
+license = {file = "LICENSE"}
+description = "Data loaders for F-SAR campaigns"
+authors = [
+    {name = "N/A", email = "na@na.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+line-ending = "lf"

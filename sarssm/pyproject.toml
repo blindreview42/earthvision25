@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sarssm"
+version = "0.0.1"
+license = {text = "MIT"}
+description = "Surface soil moisture (SSM) estimation from SAR data"
+authors = [
+    {name = "N/A", email = "na@na.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+line-ending = "lf"
